@@ -2,15 +2,5 @@
     {
         "title": "Test Title",
         "text": "Test text"
-    },
-    {
-        "title": "Note 3",
-        "text": "test again",
-        "id": "72aeefdc-faf0-44e0-bd45-a82da9bd49b3"
-    },
-    {
-        "title": "Hey check it out!",
-        "text": "test2",
-        "id": "c1e561ca-85ce-49c3-a51a-e0a95f148b8e"
     }
 ]
