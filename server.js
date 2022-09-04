@@ -12,7 +12,6 @@ const port = process.env.PORT || 3001;
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-// app.use('/api', api);
 
 app.use(express.static('public'));
 
@@ -23,5 +22,7 @@ app.listen(port, () =>
   console.log(`Example app listening at http://localhost:${port}`)
 );
 
+
+// heroku url(s)
 // heroku  https://git.heroku.com/cryptic-bastion-86548.git (fetch)
 // heroku  https://git.heroku.com/cryptic-bastion-86548.git (push)
