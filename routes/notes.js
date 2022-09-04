@@ -1,17 +1,19 @@
-const notes = require('express').Router();
+const express = require('express').Router();
+const notes = express();
 const {
   readFromFile,
 //   readAndAppend,
 //   writeToFile,
 } = require('../helpers/fsUtils');
 
-// // GET Route for retrieving all the notes
+// GET Route for retrieving all the notes
 notes.get('/', (req, res) => {
-  readFromFile('./db/db.json').then((data) => res.json(JSON.parse(data)));
+  console.log("hit route")
+  // readFromFile('./db/db.json').then((data) => console.log(data));
 });
 
 // GET Route for a specific tip
-tips.get('/:note_id', (req, res) => {
+notes.get('/:note_id', (req, res) => {
     const noteId = req.params.note_id;
     readFromFile('./db/db.json')
       .then((data) => JSON.parse(data))
